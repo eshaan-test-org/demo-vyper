@@ -26,7 +26,7 @@ jobs:
         uses: crytic/slither-action@v0.3.0
         id: slither
         with:
-          target: .
+          slither-version: 0.10.0
           # The following makes slither produce scan analysis in SARIF format
           sarif: ./slither.sarif
         # The following line prevents aborting the workflow immediately in case your files fail Slither checks.
