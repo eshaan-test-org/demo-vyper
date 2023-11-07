@@ -22,12 +22,13 @@ jobs:
         with:
             ref: ${{ github.event.pull_request.head.sha }}
 
-      - name: Setup Python and Vyper
+      - name: Setup Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.11'
-        run: |
-          pip install vyper
+        
+      - name: Setup Vyper
+        run: pip install vyper
 
       - name: Setup nodejs
         uses: actions/setup-node@v3
