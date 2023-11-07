@@ -30,11 +30,6 @@ jobs:
       - name: Setup Vyper
         run: pip install vyper
 
-      - name: Setup nodejs
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16
-
       - name: Run Slither
         uses: crytic/slither-action@v0.3.0
         id: slither
